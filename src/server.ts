@@ -1,9 +1,9 @@
 import dotenv from 'dotenv';
+dotenv.config();
 import express, { Express, Request, Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 
-dotenv.config();
 const app: Express = express();
 const port: number = Number(process.env.PORT);
 /**
